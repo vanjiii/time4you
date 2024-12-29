@@ -1,0 +1,12 @@
+[submodule "quickstart/themes/ananke"]
+	path = quickstart/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "themes/product-launch"]
+	path = themes/product-launch
+	url = git@github.com:janraasch/hugo-product-launch.git
+[submodule "themes/scroll"]
+	path = themes/scroll
+	url = git@github.com:zjedi/hugo-scroll.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
