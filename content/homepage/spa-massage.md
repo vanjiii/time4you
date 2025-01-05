@@ -1,5 +1,5 @@
 ---
-title: 'Spa Massage'
+title: 'СПА масаж'
 
 # The "header_menu_title" value will be used as text for header buttons.
 # The "title" value will be used if value for "header_menu_title" is not provided.
@@ -19,4 +19,14 @@ weight: 3
 header_menu: true
 ---
 
-This is just another section to appear on the homepage.
+**Цени:**
+
+- Класически масаж - 60 мин. - 65 лв.
+
+- Спортен масаж - 60 мин. - 80 лв.
+
+- Частичен масаж - 30 мин. - 40 лв.
+
+**Адрес:**
+
+Ул. Христо Чернопеев 10, Кв. Гео Милев

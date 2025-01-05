@@ -2,8 +2,11 @@
 baseURL = ''
 relativeURLs = "True"
 
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'bg-BG'
+title = 'Time For You'
+
+defaultContentLanguage = "bg"
+defaultContentLanguageInSubdir = true
 
 theme = 'scroll'
 
@@ -14,6 +17,8 @@ enableGitInfo = true
 
 	customHead = '<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">'
 	relativeURLs = "True"
+
+	favicon = "images/logo.jpg"
 
 
     # A "copyright"-line to be added at the bottom of the page.
