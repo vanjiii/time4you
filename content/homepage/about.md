@@ -1,6 +1,6 @@
 +++
 date = '2024-12-28T00:45:11+02:00'
-draft = true
+draft = false
 title = 'За мен'
 weight = 1
 +++

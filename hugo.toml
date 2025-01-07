@@ -5,9 +5,6 @@ relativeURLs = "True"
 languageCode = 'bg-BG'
 title = 'Time For You'
 
-defaultContentLanguage = "bg"
-defaultContentLanguageInSubdir = true
-
 theme = 'scroll'
 
 # In order to add version information in the page's footer set to true.
