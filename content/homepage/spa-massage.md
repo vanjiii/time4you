@@ -32,7 +32,7 @@ header_menu: true
 
 - Спортен масаж - 60 мин. - 80 лв.
 
-**Резервирай** [тук](https://calendly.com/ivan-dimitrov90).
+**Резервирай** [тук](https://calendly.com/steliyana-ka).
 
 **Адрес:**
 
