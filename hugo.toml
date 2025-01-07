@@ -47,3 +47,9 @@ enableGitInfo = true
         value = "steliyana.ka@gmail.com"
         url = "mailto:steliyana.ka@gmail.com"
         icon = "fa fa-envelope"
+
+    [[params.contacts]]
+        label = "address"
+        value = "Кв. Гео Милев, Ул. Христо Чернопеев 10"
+        url = "https://maps.app.goo.gl/rV4AFuJaPecTUdmL9"
+        icon = "fa fa-address-card" # fa-address-card
