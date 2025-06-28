@@ -1,52 +1,60 @@
-# baseURL = 'https://example.org/'
-baseURL = ''
+baseURL = 'https://www.timeforyou.bg/'
 relativeURLs = "True"
 
 languageCode = 'bg-BG'
 title = 'Time For You'
+description = 'Time4You is a mindfulness and coaching platform designed to help you reconnect with yourself without leaving the office.'
 
 theme = 'scroll'
+
+enableRobotsTXT = true
 
 # In order to add version information in the page's footer set to true.
 enableGitInfo = true
 
-[params]
+[sitemap]
+	changeFreq = 'weekly'
+	disable = false
+	filename = 'sitemap.xml'
+	priority = 1.0
 
+[params]
 	customHead = '<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">'
 	relativeURLs = "True"
 
 	favicon = "images/logo.jpg"
 
+	keywords = "office massage, relax, mindfulness, Bulgaria, Sofia"
 
-    # A "copyright"-line to be added at the bottom of the page.
-    # Hint: Plain HTML is supported in here as well. So you may e.g. add a link to your legal imprint-page.
-    copyright = "© Steliyana Karaivanova"
+	# A "copyright"-line to be added at the bottom of the page.
+	# Hint: Plain HTML is supported in here as well. So you may e.g. add a link to your legal imprint-page.
+	copyright = "© Steliyana Karaivanova"
 
-    # This theme will, by default, inject a design-by-line at the bottom of the page.
-    # You can turn it off, but we would really appreciate if you don’t :-)
-    hidedesignbyline = false
+	# This theme will, by default, inject a design-by-line at the bottom of the page.
+	# You can turn it off, but we would really appreciate if you don’t :-)
+	hidedesignbyline = false
 
-    [params.footer]
-    # Show contact icons for email/phone (if specified) in the footer of the page
-    showContactIcons = true
+	[params.footer]
+	# Show contact icons for email/phone (if specified) in the footer of the page
+	showContactIcons = true
 
-    # Show links indicated with footer_menu and footer_menu_title in the footer of the page
-    showFooterLinks = true
+	# Show links indicated with footer_menu and footer_menu_title in the footer of the page
+	showFooterLinks = true
 
-    [[params.contacts]]
-        label = "phone"
-        value = "+35988 343 5371"
-        url = "tel:+35988 343 5371"
-        icon = "fa fa-phone"
+	[[params.contacts]]
+		label = "phone"
+		value = "+35988 343 5371"
+		url = "tel:+35988 343 5371"
+		icon = "fa fa-phone"
 
-    [[params.contacts]]
-        label = "email"
-        value = "steliyana.ka@gmail.com"
-        url = "mailto:steliyana.ka@gmail.com"
-        icon = "fa fa-envelope"
+	[[params.contacts]]
+		label = "email"
+		value = "steliyana.ka@gmail.com"
+		url = "mailto:steliyana.ka@gmail.com"
+		icon = "fa fa-envelope"
 
-    [[params.contacts]]
-        label = "address"
-        value = "Кв. Гео Милев, Ул. Христо Чернопеев 10"
-        url = "https://maps.app.goo.gl/rV4AFuJaPecTUdmL9"
-        icon = "fa fa-address-card" # fa-address-card
+	[[params.contacts]]
+		label = "address"
+		value = "Кв. Гео Милев, Ул. Христо Чернопеев 10"
+		url = "https://maps.app.goo.gl/rV4AFuJaPecTUdmL9"
+		icon = "fa fa-address-card"
