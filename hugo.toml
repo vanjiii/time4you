@@ -3,7 +3,6 @@ relativeURLs = "True"
 
 languageCode = 'bg-BG'
 title = 'Time For You'
-description = 'Time4You is a mindfulness and coaching platform designed to help you reconnect with yourself without leaving the office.'
 
 theme = 'scroll'
 
@@ -19,15 +18,15 @@ enableGitInfo = true
 	priority = 1.0
 
 [params]
-	customHead = '<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">'
 	relativeURLs = "True"
 
 	favicon = "images/logo.jpg"
 
-	keywords = "office massage, relax, mindfulness, Bulgaria, Sofia"
+	description = 'Time For You is a mindfulness and coaching platform designed to help you reconnect with yourself without leaving the office.'
 
-	# A "copyright"-line to be added at the bottom of the page.
-	# Hint: Plain HTML is supported in here as well. So you may e.g. add a link to your legal imprint-page.
+	[params.meta]
+		keywords = 'office massage, relax, Bulgaria, Sofia'
+
 	copyright = "© Steliyana Karaivanova"
 
 	# This theme will, by default, inject a design-by-line at the bottom of the page.
@@ -58,3 +57,9 @@ enableGitInfo = true
 		value = "Кв. Гео Милев, Ул. Христо Чернопеев 10"
 		url = "https://maps.app.goo.gl/rV4AFuJaPecTUdmL9"
 		icon = "fa fa-address-card"
+
+	[[params.contacts]]
+		label = "facebook"
+		value = "facebook"
+		url = "https://www.facebook.com/profile.php?id=100064050252044"
+		icon = "fa fa-book"
