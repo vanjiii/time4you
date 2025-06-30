@@ -2,6 +2,7 @@ baseURL = 'https://www.timeforyou.bg/'
 relativeURLs = "True"
 
 languageCode = 'bg-BG'
+defaultContentLanguage = "bg"
 title = 'Time For You'
 
 theme = 'scroll'
