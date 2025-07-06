@@ -12,6 +12,10 @@ enableRobotsTXT = true
 # In order to add version information in the page's footer set to true.
 enableGitInfo = true
 
+[taxonomies]
+  tag = ""
+  category = ""
+
 [sitemap]
 	changeFreq = 'weekly'
 	disable = false
