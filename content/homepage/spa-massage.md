@@ -36,5 +36,5 @@ header_menu: true
 
 **Адрес:**
 
-Кв. Гео Милев, Ул. Христо Чернопеев 10\
-[Google Maps](https://maps.app.goo.gl/rV4AFuJaPecTUdmL9)
+Промишлена зона Хладилника, бул. Филип Кутев 7\
+[Google Maps](https://maps.app.goo.gl/89AtBmfywV8ExR6x9)
