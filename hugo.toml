@@ -59,8 +59,8 @@ enableGitInfo = true
 
 	[[params.contacts]]
 		label = "address"
-		value = "Кв. Гео Милев, Ул. Христо Чернопеев 10"
-		url = "https://maps.app.goo.gl/rV4AFuJaPecTUdmL9"
+		value = "Промишлена зона Хладилника, бул. Филип Кутев 7"
+		url = "https://maps.app.goo.gl/89AtBmfywV8ExR6x9"
 		icon = "fa fa-address-card"
 
 	[[params.contacts]]
