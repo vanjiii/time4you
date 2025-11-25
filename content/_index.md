@@ -9,7 +9,7 @@ header_use_video: false
 # header_logo: "images/logo_white_transperant.png"
 #
 # Headers are safeHTML, you can use HTML tags such as b,i,u,br
-header_headline: "Time For You"
+header_headline: "Офис масажи София - Time For You"
 # header_subheadline: "<b>Nutrition</b> Coach & <b>Chef</b> Consultant"
 
 # Add a 'Go back to top' item to the navigation menu
