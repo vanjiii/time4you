@@ -3,7 +3,7 @@ relativeURLs = "True"
 
 languageCode = 'bg-BG'
 defaultContentLanguage = "bg"
-title = 'Time For You'
+title = 'Офис масажи София - Time For You'
 
 theme = 'scroll'
 
@@ -27,7 +27,7 @@ enableGitInfo = true
 
 	favicon = "images/logo.jpg"
 
-	description = 'Time For You is a mindfulness and coaching platform designed to help you reconnect with yourself without leaving the office.'
+	description = 'Офис масажи в София от кинезитерапевт Стелияна Караиванова – мобилен масаж на работното място, 15 и 30 минутни сесии за екипи в офис сгради в София.'
 
 	[params.meta]
 		keywords = 'office massage, relax, Bulgaria, Sofia'
