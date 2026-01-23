@@ -133,5 +133,10 @@ var $sitehead = $("#site-head");
       //   });
       // });
     }
+
+    // Testimonial text expand/collapse on click
+    $(".testimonial-text.expandable").click(function() {
+      $(this).toggleClass("expanded");
+    });
   });
 })(jQuery);
