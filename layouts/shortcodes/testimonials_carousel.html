@@ -1,0 +1,51 @@
+<div class="testimonials-wrapper">
+    <button class="testimonial-nav testimonial-nav-prev" aria-label="Previous testimonial">
+        <i class="fa fa-chevron-left"></i>
+    </button>
+
+    <div class="testimonials-carousel">
+        {{ range $.Site.Data.testimonials }}
+        <div class="testimonial-card">
+            {{ if eq .source "linkedin" }}
+            <div class="testimonial-source-icon linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            {{ else if eq .source "google" }}
+            <div class="testimonial-source-icon google">
+                <i class="fa-brands fa-google"></i>
+            </div>
+            {{ end }}
+            <div class="testimonial-content">
+                {{ $text := .text }}
+                {{ $textLength := len $text }}
+                {{ if gt $textLength 100 }}
+                    <p class="testimonial-text expandable">
+                        <span class="text-short">"{{ substr $text 0 100 }}..."</span>
+                        <span class="text-full">"{{ $text }}"</span>
+                    </p>
+                {{ else }}
+                    <p class="testimonial-text">"{{ $text }}"</p>
+                {{ end }}
+            </div>
+            <div class="testimonial-author">
+                {{ if .image }}
+                <img src="{{ .image }}" alt="{{ .name }}" class="testimonial-avatar">
+                {{ else }}
+                <div class="testimonial-avatar-placeholder">
+                    <i class="fa fa-user"></i>
+                </div>
+                {{ end }}
+                <div class="testimonial-info">
+                    <p class="testimonial-name">{{ .name }}</p>
+                    <p class="testimonial-position">{{ .position }}</p>
+                    <p class="testimonial-company">{{ .company }}</p>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+
+    <button class="testimonial-nav testimonial-nav-next" aria-label="Next testimonial">
+        <i class="fa fa-chevron-right"></i>
+    </button>
+</div>
