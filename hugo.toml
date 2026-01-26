@@ -68,3 +68,9 @@ enableGitInfo = true
 		value = "facebook"
 		url = "https://www.facebook.com/profile.php?id=100064050252044"
 		icon = "fa fa-book"
+
+	[[params.contacts]]
+		label = "linkedin"
+		value = "linkedin"
+		url = "https://www.linkedin.com/in/%D1%81%D1%82%D0%B5%D0%BB%D0%B8%D1%8F%D0%BD%D0%B0-%D0%BA%D0%B0%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0-b93b66340/"
+		icon = "fa-brands fa-linkedin"
