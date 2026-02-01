@@ -1,7 +1,105 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 <meta name="google-site-verification" content="8JtI6QIgKPsfOXF8YNv0hOOHJT5Av7e19Phb_9r_ZbU" />
+
+<!-- Canonical URL -->
 {{ if .Params.canonicalUrl }}
   <link rel="canonical" href="{{ .Params.canonicalUrl }}">
 {{ else }}
   <link rel="canonical" href="{{ .Permalink }}">
 {{ end }}
+
+<!-- Language declaration -->
+<link rel="alternate" hreflang="bg" href="{{ .Permalink }}" />
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+
+<!-- Geo Meta Tags for Local SEO -->
+<meta name="geo.region" content="BG-22" />
+<meta name="geo.placename" content="Sofia" />
+<meta name="geo.position" content="42.6977;23.3219" />
+<meta name="ICBM" content="42.6977, 23.3219" />
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}images/cover-image-oil-touched.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="bg_BG" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}" />
+<meta name="twitter:image" content="{{ .Site.BaseURL }}images/cover-image-oil-touched.jpg" />
+
+{{- $phone := "" }}
+{{- $email := "" }}
+{{- $address := "" }}
+{{- $facebook := "" }}
+{{- $linkedin := "" }}
+{{- range .Site.Params.contacts }}
+  {{- if eq .label "phone" }}{{ $phone = .value }}{{ end }}
+  {{- if eq .label "email" }}{{ $email = .value }}{{ end }}
+  {{- if eq .label "address" }}{{ $address = .value }}{{ end }}
+  {{- if eq .label "facebook" }}{{ $facebook = .url }}{{ end }}
+  {{- if eq .label "linkedin" }}{{ $linkedin = .url }}{{ end }}
+{{- end }}
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "{{ .Site.BaseURL }}#business",
+  "name": "{{ .Site.Title }}",
+  "description": "{{ .Site.Params.description }}",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "{{ $phone }}",
+  "email": "{{ $email }}",
+  "image": "{{ .Site.BaseURL }}images/cover-image-oil-touched.jpg",
+  "logo": "{{ .Site.BaseURL }}{{ .Site.Params.favicon }}",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ $address }}",
+    "addressLocality": "София",
+    "addressRegion": "София-град",
+    "addressCountry": "BG"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.6686,
+    "longitude": 23.3178
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "София",
+    "sameAs": "https://en.wikipedia.org/wiki/Sofia"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Стелияна Караиванова",
+    "jobTitle": "Кинезитерапевт",
+    "image": "{{ .Site.BaseURL }}images/about-me.png",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "НСА Васил Левски"
+    }
+  },
+  "sameAs": [
+    "{{ $facebook }}",
+    "{{ $linkedin }}"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "9",
+    "reviewCount": "9"
+  }
+}
+</script>
