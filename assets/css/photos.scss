@@ -1,0 +1,117 @@
+/* Photos Carousel Styles */
+
+.photos-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin: 3rem auto;
+  padding: 0 70px;
+}
+
+.photos-carousel {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 1rem 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.photo-card {
+  flex: 0 0 auto;
+  width: calc(40% - 1rem);
+  min-width: 400px;
+  scroll-snap-align: start;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+}
+
+/* Navigation Buttons */
+.photo-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--highlight);
+  color: var(--highlight-contrast);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+
+  &:hover {
+    background-color: var(--highlight-inverse);
+    color: var(--highlight-inverse-contrast);
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  &:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+}
+
+.photo-nav-prev {
+  left: 10px;
+}
+
+.photo-nav-next {
+  right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .photo-card {
+    width: calc(55% - 1rem);
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .photo-card {
+    width: calc(85% - 1rem);
+    min-width: 280px;
+  }
+
+  .photos-wrapper {
+    padding: 0 60px;
+  }
+
+  .photo-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-card {
+    width: calc(90% - 1rem);
+    min-width: 250px;
+  }
+}
