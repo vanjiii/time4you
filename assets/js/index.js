@@ -138,5 +138,26 @@ var $sitehead = $("#site-head");
     $(".testimonial-text.expandable").click(function() {
       $(this).toggleClass("expanded");
     });
+
+    // Photos Carousel Navigation
+    var $photosCarousel = $(".photos-carousel");
+    var $photoPrevBtn = $(".photo-nav-prev");
+    var $photoNextBtn = $(".photo-nav-next");
+
+    if ($photosCarousel.length) {
+      var photoCardWidth = $(".photo-card").outerWidth(true);
+
+      $photoPrevBtn.click(function() {
+        $photosCarousel.animate({
+          scrollLeft: "-=" + photoCardWidth
+        }, 300);
+      });
+
+      $photoNextBtn.click(function() {
+        $photosCarousel.animate({
+          scrollLeft: "+=" + photoCardWidth
+        }, 300);
+      });
+    }
   });
 })(jQuery);
